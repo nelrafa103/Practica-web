@@ -1,0 +1,35 @@
+.foot{
+    background-color: black;
+    display: flex;
+    color:white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.foot__contacts{
+  margin: 40px;
+  line-height: 3;
+  text-align: justify;
+  font-size: large;
+  flex-grow: 2;
+  width: 400px;
+}
+
+.foot__credits{
+    text-align: justify;
+    font-size: large;
+    line-height: 3;
+    flex-grow: 2;
+    margin: 40px;
+    width: 400px;
+}
+
+.foot__social_network{
+    margin: 40px;
+    flex-grow: 2;
+    width: 400px;
+    line-height: 3;
+
+}
