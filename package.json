@@ -1,18 +1,16 @@
 {
   "name": "practica-web",
+  "type": "module",
   "version": "1.0.0",
-  "description": "A web practice to get new skills",
-  "main": "index.js",
+  "description": "Un proyecto para mejorar",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "run"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nelrafa103/Practica-web.git"
   },
-  "keywords": [
-    "Web"
-  ],
   "author": "nelrafa103",
   "license": "ISC",
   "bugs": {

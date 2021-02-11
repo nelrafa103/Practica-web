@@ -1,0 +1,10 @@
+
+{
+   "descripcion": "Una base de datos para los usurios" ,
+   "type": "module",
+   "data":
+   {
+     "name": "Nelcido",
+     "lastname": "Diaz"
+   }
+}
