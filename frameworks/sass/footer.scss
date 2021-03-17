@@ -1,0 +1,36 @@
+@use "style";
+.foot{
+   background-color:style.$footBackground;
+   display: flex;
+   color:style.$footColor;
+   flex-wrap: wrap;
+   flex-direction: row;
+   margin-top: 20px;
+   width: 100%;
+}
+
+.foot__contacts{
+ margin: 40px;
+ line-height: 3;
+ text-align: justify;
+ font-size: style.$fontLarge;
+ flex-grow: 2;
+ width: 400px;
+}
+
+.foot__credits{
+   text-align: justify;
+   font-size: style.$fontLarge;
+   line-height: 3;
+   flex-grow: 2;
+   margin: 40px;
+   width: 400px;
+}
+
+.foot__social_network{
+   margin: 40px;
+   flex-grow: 2;
+   width: 400px;
+   line-height: 3;
+
+}

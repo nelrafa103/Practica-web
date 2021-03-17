@@ -1,0 +1,26 @@
+@use "style";
+
+.cards{
+   display: flex;
+   flex-wrap: wrap; 
+   width: 100%;
+   flex-direction: row;
+   margin: auto;
+}
+
+.cards__element{
+    width: 400px;
+    flex-grow: 2;
+    border-color: style.$cardsBorder;
+    border-radius: 5px;
+    border-style: solid;
+    margin: 10px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: justify;
+    padding: 5px;
+}
+
+.cards_tittle{
+  text-align: center;  
+}
