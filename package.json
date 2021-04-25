@@ -1,0 +1,23 @@
+{
+  "name": "practica-web",
+  "version": "1.0.0",
+  "description": "Un proyecto para poner a prueba parte de mis habilidades",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelrafa103/Practica-web.git"
+  },
+  "keywords": [
+    "practica",
+    "web"
+  ],
+  "author": "nelcido rafael diaz delgado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelrafa103/Practica-web/issues"
+  },
+  "homepage": "https://github.com/nelrafa103/Practica-web#readme"
+}

@@ -1,0 +1,32 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0%;
+  padding: 0;
+  background-color: orange;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__elemento {
+  display: inline;
+  padding: 2px;
+}
+
+.navbar--enlace {
+  text-decoration: none;
+  font-size: x-large;
+  text-decoration-style: none;
+  color: black;
+}
+
+.navbar__lista {
+  position: left;
+}
+
+/*# sourceMappingURL=nav.css.map */

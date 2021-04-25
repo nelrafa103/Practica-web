@@ -1,3 +1,5 @@
+
+$nav-backgroundColor: orange;
 body{
     margin: 0%;
     padding: 0%;
@@ -7,19 +9,19 @@ body{
     width: 100%;
     margin: 0%;
     padding: 0;
-    background-color: orange;
+    background-color: $nav-backgroundColor;
     height: 48px;
     display: flex;
     align-items: center;
-} 
-  
+}
+
 .navbar__elemento{
      display: inline;
      padding: 2px;
 }
 
 .navbar--enlace{
- text-decoration: none;   
+ text-decoration: none;
  font-size: x-large;
  text-decoration-style: none;
  color: black;
@@ -27,8 +29,4 @@ body{
 }
 .navbar__lista{
   position:left;
-}
-
-.navbar--enlace:hover{
-  /*color: white; */
 }
