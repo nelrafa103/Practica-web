@@ -2,5 +2,9 @@
  "image1":
       {
         "url": "images/home_image.svg"
-      }
+      },
+  "image2": 
+  {
+   "url": "images/home_image.svg"
+  }
 }

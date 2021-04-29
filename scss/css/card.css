@@ -11,8 +11,6 @@
   flex-grow: 2;
   border-color: black;
   border-radius: 5px;
-  /* background-color: orange; */
-  border-color: orange;
   border-style: solid;
   margin: 10px;
   line-height: 50px;
@@ -23,6 +21,11 @@
 
 .cards_tittle {
   text-align: center;
+}
+
+.card-login {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=card.css.map */
