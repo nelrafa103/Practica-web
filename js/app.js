@@ -1,11 +1,14 @@
-import { User,url } from "./model.js";
+import { User, url } from "./model.js";
 let xhr = new XMLHttpRequest();
 xhr.open("GET", url);
 xhr.responseType = "json";
 xhr.send();
 
-xhr.onload = function () {
-  const cuentaAbierta = new User(xhr.response);
-  cuentaAbierta.initialize();
+function load() {
+  let response = xhr.response;
+  return response;
+}
+xhr.onload = () => {
+  let CuentaAbierta = new User(load());
+  CuentaAbierta.initialize();
 };
-

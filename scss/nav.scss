@@ -1,5 +1,4 @@
-
-$nav-backgroundColor: orange;
+@use 'common' as common;
 body{
     margin: 0%;
     padding: 0%;
@@ -9,7 +8,7 @@ body{
     width: 100%;
     margin: 0%;
     padding: 0;
-    background-color: $nav-backgroundColor;
+    background-color: common.$nav-backgroundColor;
     height: 48px;
     display: flex;
     align-items: center;
@@ -24,7 +23,7 @@ body{
  text-decoration: none;
  font-size: x-large;
  text-decoration-style: none;
- color: black;
+ color: common.$nav-fontColor;
 
 }
 .navbar__lista{

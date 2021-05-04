@@ -1,3 +1,4 @@
+@use 'common' as common;
 .cards{
    display: flex;
    flex-wrap: wrap;
@@ -9,7 +10,7 @@
 .cards__element{
     width: 400px;
     flex-grow: 2;
-    border-color: black;
+    border-color: common.$card-borderColor;
     border-radius: 5px;
     border-style: solid;
     margin: 10px;

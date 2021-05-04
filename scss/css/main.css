@@ -1,0 +1,150 @@
+.introdution_image {
+  width: 100%;
+  height: 100%;
+}
+
+.introduction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction__message {
+  position: absolute;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.introduction__explain {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.introduction__text {
+  font-size: large;
+  flex-grow: 4;
+  text-align: justify;
+  margin: auto;
+  width: 500px;
+  line-height: 50px;
+  /*background-color: red; */
+}
+
+.introduction__logo {
+  /*background-color: blue; */
+  flex-grow: 4;
+  flex-shrink: 1;
+  margin: 15px;
+  width: 500px;
+}
+
+.introduction__tittle {
+  text-align: center;
+}
+
+.foot {
+  background-color: black;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.foot__contacts {
+  margin: 40px;
+  line-height: 3;
+  text-align: justify;
+  font-size: large;
+  flex-grow: 2;
+  width: 400px;
+}
+
+.foot__credits {
+  text-align: justify;
+  font-size: large;
+  line-height: 3;
+  flex-grow: 2;
+  margin: 40px;
+  width: 400px;
+}
+
+.foot__social_network {
+  margin: 40px;
+  flex-grow: 2;
+  width: 400px;
+  line-height: 3;
+}
+
+/*El archivo common.scss guarda las variables comunes y funciones utilizadas 
+en los documentos de css. Haciendo mas reutilizable el codigo escrito.
+*/
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0%;
+  padding: 0;
+  background-color: orange;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__elemento {
+  display: inline;
+  padding: 2px;
+}
+
+.navbar--enlace {
+  text-decoration: none;
+  font-size: x-large;
+  text-decoration-style: none;
+  color: black;
+}
+
+.navbar__lista {
+  position: left;
+}
+
+/*El archivo common.scss guarda las variables comunes y funciones utilizadas 
+en los documentos de css. Haciendo mas reutilizable el codigo escrito.
+*/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  margin: auto;
+}
+
+.cards__element {
+  width: 400px;
+  flex-grow: 2;
+  border-color: black;
+  border-radius: 5px;
+  border-style: solid;
+  margin: 10px;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: justify;
+  padding: 5px;
+}
+
+.cards_tittle {
+  text-align: center;
+}
+
+.card-login {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */
