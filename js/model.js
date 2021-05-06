@@ -17,6 +17,34 @@ class User {
     this.born = this.data["users"]["born"];
   }
 }
-export { User, url };
 
+class dataBook {
+  constructor(URL) {
+    this.url = URL;
+  }
+  inyectData(data) {
+    var Usuario = new User(data);
+    console.log(Usuario);
+  }
+  initialize() {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", this.url);
+    xhr.responseType = "json";
+    xhr.send();
+    xhr.onload = () => {
+      this.inyectData(xhr.response);
+    };
+  }
+}
+class images {
+  constructor(URL) {
+    this.file;
+    this.height;
+    this.width;
+    this.url = URL;
+  }
+  resize() {}
 
+  delete() {}
+}
+export { User, dataBook, url };
