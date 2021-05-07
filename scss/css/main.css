@@ -92,7 +92,7 @@ body {
   width: 100%;
   margin: 0%;
   padding: 0;
-  background-color: orange;
+  background-color: white;
   height: 48px;
   display: flex;
   align-items: center;
@@ -121,30 +121,37 @@ en los documentos de css. Haciendo mas reutilizable el codigo escrito.
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
   margin: auto;
 }
 
-.cards__element {
-  width: 400px;
-  flex-grow: 2;
+.card__element {
+  width: 99%;
+  height: 300px;
   border-color: black;
-  border-radius: 5px;
   border-style: solid;
-  margin: 10px;
-  line-height: 50px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
   text-align: justify;
-  padding: 5px;
 }
 
-.cards_tittle {
-  text-align: center;
+.card_tittle {
+  text-align: left;
 }
 
 .card-login {
   display: flex;
   flex-direction: column;
+}
+
+.card__text {
+  text-align: justify;
+}
+
+.card__onLeft {
+  width: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */

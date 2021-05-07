@@ -1,13 +1,20 @@
 const url = "./js/users.json";
 class User {
+  #data;
+  #fName;
+  #sName;
+  #fLastName;
+  #sLastName;
+  #born;
+  #date;
   constructor(entry) {
-    this.data = entry;
-    this.fName;
-    this.sName;
-    this.fLastName;
-    this.sLastName;
-    this.born;
-    this.date;
+    this.#data = entry;
+    this.#fName;
+    this.#sName;
+    this.#fLastName;
+    this.#sLastName;
+    this.#born;
+    this.#date;
   }
   initialize() {
     this.fName = this.data["users"]["first name"];
@@ -36,15 +43,9 @@ class dataBook {
     };
   }
 }
-class images {
-  constructor(URL) {
-    this.file;
-    this.height;
-    this.width;
-    this.url = URL;
-  }
-  resize() {}
 
-  delete() {}
-}
+const dat = await fetch("js/data.json");
+let images = await dat.json(); 
+console.log(images);
+function resize(width,height){};
 export { User, dataBook, url };

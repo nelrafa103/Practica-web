@@ -6,11 +6,14 @@
 ## Tecnologias
  - ###  Html
  - ###  Css
- - ### Javascript
- - ###  Git y  Github
+ - ###  Javascript
+ - ###  Haml
+ - ###  Sass
  - ###  Prettier
  - ###  Eslint
-
+ - ###  Json
+ - ###  Python
+ - ###  Mongodb
 ## Credits
  - ###  Autor: Nelrafa103
 
