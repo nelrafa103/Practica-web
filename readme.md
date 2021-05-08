@@ -14,6 +14,7 @@
  - ###  Json
  - ###  Python
  - ###  Mongodb
+   ###  Netlify
 ## Credits
  - ###  Autor: Nelrafa103
 
