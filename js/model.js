@@ -1,5 +1,5 @@
 const url = "./js/users.json";
-class User {
+class user {
   #data;
   #fName;
   #sName;
@@ -30,7 +30,7 @@ class dataBook {
     this.url = URL;
   }
   inyectData(data) {
-    var Usuario = new User(data);
+    var Usuario = new user(data);
     console.log(Usuario);
   }
   initialize() {
@@ -46,6 +46,6 @@ class dataBook {
 
 const dat = await fetch("js/data.json");
 let images = await dat.json(); 
-console.log(images);
+//console.log(images);
 function resize(width,height){};
-export { User, dataBook, url };
+export { user, dataBook, url ,images};

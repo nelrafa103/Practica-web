@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/nelrafa103/Practica-web/issues"
   },
-  "homepage": "https://github.com/nelrafa103/Practica-web#readme"
+  "homepage": "https://github.com/nelrafa103/Practica-web#readme",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  }
 }
