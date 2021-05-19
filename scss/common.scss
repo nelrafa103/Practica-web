@@ -1,4 +1,4 @@
-/*El archivo common.scss guarda las variables comunes y funciones utilizadas 
+/*El archivo common.scss guarda las variables comunes y funciones utilizadas
 en los documentos de css. Haciendo mas reutilizable el codigo escrito.
 */
 
@@ -9,3 +9,63 @@ $foot-backgroundColor: black;
 $foot-fontColor: white;
 
 $card-borderColor: black;
+@font-face{
+    font-family:"Koho-Bold";
+    src: url(KoHo/KoHo-Bold.ttf);
+}
+@font-face{
+    font-family:"KoHo-BoldItalic";
+    src: url(KoHo/KoHo-BoldItalic.ttf);
+}
+@font-face{
+      font-family:"KoHo-ExtraLight";
+      src: url(KoHo/KoHo-ExtraLight.ttf);
+}
+@font-face{
+    font-family:"KoHo-ExtraLightItalic";
+    src: url(KoHo/KoHo-ExtraLightItalic.ttf);
+}
+@font-face{
+    font-family:"KoHo-Italic";
+    src: url(KoHo/KoHo-Italic.ttf);
+}
+@font-face{
+    font-family:"KoHo-Light";
+    src: url(KoHo/KoHo-Light.ttf);
+}
+@font-face{
+    font-family:"KoHo-LightItalic";
+    src: url(KoHo/KoHo-LightItalic.ttf);
+}
+@font-face{
+    font-family:"KoHo-Medium";
+    src: url(KoHo/KoHo-Medium.ttf);
+}
+@font-face{
+    font-family:"KoHo-MediumItalic";
+    src: url(KoHo/KoHo-MediumItalic.ttf);
+}
+@font-face{
+    font-family:"KoHo-Regular";
+    src: url(KoHo/KoHo-Regular.ttf);
+}
+@font-face{
+    font-family:"KoHo-SemiBold";
+    src: url(KoHo/KoHo-SemiBold.ttf);
+}
+@font-face{
+    font-family:"KoHo-SemiBoldItalic";
+    src: url(KoHo/KoHo-SemiBoldItalic.ttf);
+}
+@mixin newFont($name,$size){
+  font-family: "KoHo-" + $name;
+  font-size: $size+px;
+}
+/*@function addFontFamily($index){
+  $fontStyles: "Bold","BoldItalic","ExtraLight","ExtraLightItalic","Italic","Light","LightItalic","Medium","MediumItalic","Regular","SemiBold","SemiBoldItalic";
+  $directionUrl: "./fonts/KoHo-" + $fontStyles[$index];
+  @return $fontStyles;
+}*/
+@mixin flexing(){
+  float: flex;
+}

@@ -1,7 +1,7 @@
 # Template  Page
 
 ## Objetivos
- Este proyecto ha sido creado para practicar todos los nuevos conocimientos webs 
+ Este proyecto ha sido creado para practicar todos los nuevos conocimientos de la web. Esto incluye deployment etc..
 
 ## Tecnologias
  - ###  Html
@@ -14,7 +14,7 @@
  - ###  Json
  - ###  Python
  - ###  Mongodb
-   ###  Netlify
+ - ###  Netlify
 ## Credits
  - ###  Autor: Nelrafa103
 

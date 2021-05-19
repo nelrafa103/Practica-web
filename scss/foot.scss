@@ -1,3 +1,4 @@
+@use 'common' as common;
 .foot{
     background-color: black;
     display: flex;
@@ -12,14 +13,14 @@
   margin: 40px;
   line-height: 3;
   text-align: justify;
-  font-size: large;
+  @include common.newFont("Regular",24);
   flex-grow: 2;
   width: 400px;
 }
 
 .foot__credits{
     text-align: justify;
-    font-size: large;
+    @include common.newFont("Regular",18);
     line-height: 3;
     flex-grow: 2;
     margin: 40px;

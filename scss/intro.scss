@@ -1,5 +1,7 @@
+@use 'common' as common;
+
 #home-image{
-    width:  10%;
+    width:  100%;
 }
 
 .introduction{
@@ -27,6 +29,8 @@
   text-align: justify;
   margin: auto;
   width: 500px;
+  margin-left: 15%;
+  margin-right: 15%;
   line-height: 50px;
   /*background-color: red; */
 }
@@ -40,4 +44,15 @@
 }
 .introduction__tittle{
   text-align: center;
+}
+.introduction__text > p{
+  text-align: justify;
+  @include common.newFont("ExtraLightItalic",22);
+}
+
+@media (max-width: 600px){
+  .introduction__text{
+    margin-left: 1px;
+    margin-right: 1px;
+  }
 }
