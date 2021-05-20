@@ -1,4 +1,6 @@
-
+const s = require('./entablishConection')
+console.log(s.component)
+//require('modules')
 const url = "./js/users.json";
 class user {
   #data;
@@ -46,47 +48,24 @@ class DataBook {
 class Body {
   #pageName;
   #contador;
+  #htmlCode;
   constructor(name) {
     this.pageName = name;
     this.contador = { cards: 0 };
+    this.htmlCode;
   }
   cardHtml(name) {
-    const htmlCode = {
-      infoAndImage: ` <div class='card__element'>
-    <div class='card__onLeft'>
-    <h2 class='card__tittle'></h2>
-    <p class='card__text'>
-    </p>
-    </div>
-    <div class='card__onRight'>
-    <img src='./images/home_image.svg'>
-    </div>
-    </div>`,
-      logIn: `<div>
-    <label for='fName'>First name:</label>
-    <input id='fName' name='fname' type='text'>
-    </div>
-    <div>
-    <label for='sName'>Second name:</label>
-    <input id='sName' name='sname' type='text'>
-    </div>
-    <div>
-    <label for='sName'>First Lastname:</label>
-    <input id='fLastName' name='flastname' type='text'>
-    </div>
-    <div>
-    <label for='sName'>Second Lastname:</label>
-    <input id='sLastName' name='slastname' type='text'>
-    </div>`,
-    };
-    return htmlCode[name];
+    return
+  }
+  addHtmlElement(){
+
   }
   counter(component) {
     this.contador[component]++;
     return this.contador[component];
   }
 }
-const dat = await fetch("js/data.json");
-let images = await dat.json();
+/*const dat = await fetch("js/data.json");
+let images = await dat.json();*/
 function resize(width, height) {}
-export { user, DataBook, url, images, Body };
+//export { user, DataBook, url, images, Body };
