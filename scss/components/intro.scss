@@ -10,7 +10,13 @@
   flex-direction: column;
   align-items: center;
 }
-
+.introduction__animation{
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
 .introduction__message{
   position:absolute;
   text-align: center;

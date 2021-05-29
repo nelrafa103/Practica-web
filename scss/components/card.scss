@@ -41,6 +41,7 @@
 
 .card__onLeft{
   order: 1;
+  margin-right: 10px;
   height: 100%;
   width: 50%;
 }
@@ -48,11 +49,6 @@
 .card__onRight{
    order: 2;
    width: 50%;
-}
-
-.card__onRight > img{
-  width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 600px){

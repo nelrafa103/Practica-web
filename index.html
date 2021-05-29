@@ -1,13 +1,14 @@
 <DOCTYPE>
 <html>
 <head>
-<link href='./scss/css/main.css' rel='stylesheet'>
+<link href='./scss/css/index.css' rel='stylesheet'>
 </head>
 <body>
 <nav class='navbar'>
 <lu class='navbar__lista'>
 <li class='navbar__elemento'>
 <a alt='Enlace a acerca de nosotros' class='navbar--enlace' href=''>Acerca de nosotros</a>
+<button class='navbar__button'>Menu</button>
 </li>
 <li class='navbar__elemento'>
 <a alt='Enlace a contactanos' class='navbar--enlace' href=''>Contactanos</a>
@@ -16,12 +17,16 @@
 <a alt='Enlace a productos' class='navbar--enlace' href=''>Productos</a>
 </li>
 <p class='navbar__elemento'>
-<a alt='Enlace para iniciar sesion' class='navbar--enlace' href='haml/html/logIn.html' id='logIn'>Iniciar Sesion</a>
+<a alt='Enlace para iniciar sesion' class='navbar--enlace' href='logIn.html' id='logIn'>Iniciar Sesion</a>
 </p>
 </lu>
 </nav>
 <section class='introduction'>
-<img class='introduction__image' id='home-image' src=''>
+<div class='introduction__animation'>
+<div class='firstCircle'></div>
+<div class='secondCircle'></div>
+<div class='thirdCircle'></div>
+</div>
 <div class='introduction__message'></div>
 <section class='introduction__explain'>
 <div class='introduction__text'>
@@ -35,22 +40,22 @@ Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deseru
 </div>
 </section>
 </section>
-<section class='cards'></section>
+<section class='cards' id='exclusive'></section>
 <footer class='foot'>
 <div class='foot__social_networks'>
 <h2>Social Network</h2>
 <ul>
 <li>
 <a alt='Facebook icon' href=''></a>
-<img alt='Facebook image' src=''>
+<img alt='Facebook image' class='facebook-button' src='https://ik.imagekit.io/ereddhbkni/Icon/facebook_P3cLKq0JD.svg'>
 </li>
 <li>
 <a alt='Instagram icon' href=''></a>
-<img alt='Instagram images' src=''>
+<img alt='Instagram images' class='instagram-button' src='https://ik.imagekit.io/ereddhbkni/Icon/instagram_cashN9yQa.svg'>
 </li>
 <li>
 <a alt='Twitter icon' href=''></a>
-<img alt='Twitter icon' src=''>
+<img alt='Twitter icon' class='twitter-button' src='https://ik.imagekit.io/ereddhbkni/Icon/gorjeo_qP0-xgeLX.svg'>
 </li>
 </ul>
 </div>
@@ -64,11 +69,10 @@ Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deseru
 <li>Contact 1</li>
 <li>Contact 2</li>
 <li>Contact 3</li>
+<script src='js/bundle-index.js' type='module'></script>
 </ul>
 </div>
 </footer>
 </body>
-<script src='js/bundle.js'></script>
-<script src='js/app.js' type='module'></script>
 </html>
 </DOCTYPE>

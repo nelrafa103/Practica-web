@@ -16,7 +16,10 @@ body {
 
 .navbar__elemento {
   display: inline;
-  padding: 2px;
+  padding: 4px;
+  border-style: ridge;
+  border-color: white;
+  border-width: thin;
   margin-right: 20px;
 }
 
@@ -32,13 +35,35 @@ body {
 }
 #logIn {
   float: right;
+  padding: 2px;
+  border-style: ridge;
+  border-color: whitesmoke;
+  border-width: thin;
 }
 
+.navbar__button{
+  background-color: gray;
+  border-style: none;
+  padding: 10px;
+  display: none;
+}
+.facebook-button{
+  width: 20px;
+  height: 20px;
+}
+.twitter-button{
+  width: 20px;
+  height: 20px;
+}
+.instagram-button{
+  width: 20px;
+  height: 20px;
+}
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
-    position:absolute;
-    align-items: initial;
+    height: auto;
+    align-items: flex-start;
   }
   .navbar__elemento {
     display: inherit;
@@ -49,5 +74,11 @@ body {
   }
   .navbar__lista {
     margin: 0;
+  }
+  .navbar__button{
+    display: inline-block;
+  }
+  .navbar--enlace{
+    display: none;
   }
 }

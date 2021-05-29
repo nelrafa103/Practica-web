@@ -1,20 +1,24 @@
 %DOCTYPE
  %html
   %head
-   %link{href:"./scss/css/main.css" ,rel:"stylesheet"}
+   %link{href:"./scss/css/index.css" ,rel:"stylesheet"}
   %body
    %nav.navbar
     %lu.navbar__lista
      %li.navbar__elemento
       %a{href:"", alt:"Enlace a acerca de nosotros",class:"navbar--enlace"}Acerca de nosotros
+      %button.navbar__button{onclick:'body.displayMenu()'} Menu
      %li.navbar__elemento
       %a.navbar--enlace{href:"" ,alt:"Enlace a contactanos"}Contactanos
      %li.navbar__elemento
       %a.navbar--enlace{href:"" ,alt:"Enlace a productos"}Productos
      %p.navbar__elemento
-      %a.navbar--enlace{href:"haml/html/logIn.html" ,alt:"Enlace para iniciar sesion",id:"logIn"}Iniciar Sesion
+      %a.navbar--enlace{href:"logIn.html" ,alt:"Enlace para iniciar sesion",id:"logIn"}Iniciar Sesion
    %section.introduction
-    %img.introduction__image{src:"" ,id:"home-image"}
+    %div.introduction__animation
+     %div.firstCircle
+     %div.secondCircle
+     %div.thirdCircle
     %div.introduction__message
     %section.introduction__explain
      %div.introduction__text
@@ -24,7 +28,7 @@
        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
        Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
        Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-   %section.cards
+   %section.cards{id:'exclusive'}
 
    %footer.foot
     %div.foot__social_networks
@@ -32,13 +36,13 @@
      %ul
       %li
        %a{href:"", alt:"Facebook icon"}
-       %img{src:"", alt:"Facebook image"}
+       %img{src:"https://ik.imagekit.io/ereddhbkni/Icon/facebook_P3cLKq0JD.svg", alt:"Facebook image", class:"facebook-button"}
       %li
        %a{href:"" ,alt:"Instagram icon"}
-       %img{src:"", alt:"Instagram images"}
+       %img{src:"https://ik.imagekit.io/ereddhbkni/Icon/instagram_cashN9yQa.svg", alt:"Instagram images", class:"instagram-button"}
       %li
        %a{href:"" ,alt:"Twitter icon"}
-       %img{src:"", alt:"Twitter icon"}
+       %img{src:"https://ik.imagekit.io/ereddhbkni/Icon/gorjeo_qP0-xgeLX.svg", alt:"Twitter icon", class:"twitter-button"}
     %div.foot__credits
      %h2 Credists
      %p
@@ -48,5 +52,4 @@
       %li Contact 1
       %li Contact 2
       %li Contact 3
-  %script{src: "js/bundle.js"}
-  %script{src:"js/app.js",type:"module"}
+      %script{src:"js/bundle-index.js",type:"module"}
