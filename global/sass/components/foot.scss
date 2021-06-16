@@ -1,0 +1,75 @@
+@use 'common'as common;
+
+@mixin foot {
+    .foot {
+        background-color: black;
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@mixin foot__contacts {
+    .foot__contacts {
+        line-height: 3;
+        text-align: justify;
+        flex-grow: 2;
+        width: 33%;
+    }
+}
+
+@mixin foot__credits {
+    .foot__credits {
+        text-align: justify;
+        line-height: 3;
+        flex-grow: 2;
+        width: 33%;
+    }
+}
+
+@mixin foot__social_networks {
+    .foot__social_networks {
+        text-align: justify;
+        flex-grow: 2;
+        padding-left: 10px;
+        width: 33%;
+        line-height: 3;
+    }
+}
+
+@mixin facebook-button {
+
+    .facebook-button {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@mixin twitter-button {
+    .twitter-button {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@mixin instagram-button {
+
+
+    .instagram-button {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@mixin prototype1 {
+    @include foot;
+    @include foot__contacts;
+    @include foot__credits;
+    @include instagram-button;
+    @include twitter-button;
+    @include facebook-button;
+}

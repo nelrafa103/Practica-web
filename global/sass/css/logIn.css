@@ -1,0 +1,53 @@
+/*El archivo common.scss guarda las variables comunes y funciones utilizadas
+en los documentos de css. Haciendo mas reutilizable el codigo escrito.
+*/
+/*
+the function getUrl get a the name of the font and return the url to it.
+*/
+/*
+ Para los mixins que hacen la funcion de 
+ encasulamiento de un tipo de html elemento.
+ Por ejemplo en el uso de una carta que puede
+ que se implemente varios tipos. 
+*/
+.logIn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logIn__element {
+  display: flex;
+  margin-right: 30%;
+  align-items: center;
+  margin-left: 30%;
+  padding: 10px;
+  border-style: ridge;
+  flex-direction: column;
+  width: 30%;
+}
+
+.logIn__password {
+  font-size: 22px;
+  font-style: bold;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.logIn__name {
+  font-size: 22px;
+  font-style: bold;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 600px) {
+  .logIn__element {
+    width: 100%;
+    border-style: none;
+  }
+}
+
+/*# sourceMappingURL=logIn.css.map */

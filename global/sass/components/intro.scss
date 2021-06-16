@@ -51,9 +51,10 @@
 .introduction__tittle{
   text-align: center;
 }
+
 .introduction__text > p{
   text-align: justify;
-  @include common.newFont("ExtraLightItalic",22);
+  font-family:"KoHo-Bold";
 }
 
 @media (max-width: 600px){

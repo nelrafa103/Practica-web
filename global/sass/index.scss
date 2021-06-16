@@ -1,0 +1,9 @@
+@use "components/card" as card;
+@use "components/foot" as foot;
+@use "components/nav" as nav;
+@use "components/intro.scss" as intro;
+@use "components/home-animation" as home-animation;
+
+
+@include card.prototype1;
+@include foot.prototype1;

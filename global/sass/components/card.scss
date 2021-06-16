@@ -1,0 +1,116 @@
+@use 'common'as common;
+@use 'home-animation'as animations;
+
+@mixin cards($direction) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: #{$direction};
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@mixin card__element {
+  .card__element {
+    height: auto;
+    padding: 20px;
+    width: auto;
+    display: flex;
+    border-style: ridge;
+    flex-direction: row;
+    margin-bottom: 10%;
+    @include animations.addAnimationVanished('.card__text', 'text-animation', '2s');
+    @include animations.addAnimationVanished('.card__image', 'image-animation', '1s');
+  }
+}
+
+@mixin card__tittle {
+  .card__tittle {
+    text-align: center;
+  }
+}
+
+@mixin card__button{
+  .card__button{
+    border-style: ridge;
+    padding: 20px;
+    text-decoration: none;
+  }
+  .card--link{
+     text-decoration: none;
+  }
+}
+
+@mixin card__text {
+  .card__text {
+    text-align: justify;
+    margin-left: 10px;
+  }
+
+}
+
+@mixin card__onLeft {
+  .card__onLeft {
+    order: 1;
+    margin-right: 10px;
+    height: 100%;
+    width: 50%;
+  }
+}
+
+@mixin card__onRight {
+  .card__onRight {
+    order: 2;
+    width: 50%;
+  }
+}
+@mixin media__prototype1 {
+  @media (max-width: 600px) {
+    .cards {
+      margin-left: 0px;
+      width: 100%;
+      margin-right: 0px;
+  
+    }
+  
+    .card__element {
+      flex-direction: column;
+      padding: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  
+    .card__onLeft {
+      order: 2;
+      @include common.addFontStyle(20, 'italic');
+      width: 100%;
+    }
+  
+    .card__onRight {
+      order: 1;
+      width: 100%;
+    }
+  
+    .card__text {
+      margin-left: 0px;
+    }
+  
+  }
+}
+
+/* Principal card type in the web page */
+@mixin prototype1 {
+  @include cards(column);
+  @include card__element;
+  @include card__onLeft;
+  @include card__onRight;
+  @include card__text;
+  @include card__tittle;
+  @include media__prototype1;
+}
+
+@mixin prototype2 {
+ @include cards(row);
+
+}

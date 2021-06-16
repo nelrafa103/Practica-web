@@ -1,0 +1,8 @@
+@use 'components/logIn' as logIn;
+@use 'components/foot' as foot;
+
+@include logIn.logIn;
+@include logIn.logIn__element;
+@include logIn.logIn__password;
+@include logIn.logIn__name;
+@include logIn.media;

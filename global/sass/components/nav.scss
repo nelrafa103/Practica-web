@@ -1,8 +1,22 @@
-@use 'common' as common;
+@use 'common'as common;
+
 body {
   margin: 0%;
   padding: 0%;
+
 }
+
+@mixin hidenButtons($className) {
+  #{$className} {
+    background-color: gray;
+    border-style: none;
+    padding: 10px;
+    display: none;
+    
+  }
+}
+
+@include common.addFont("KoHo-Bold");
 
 .navbar {
   width: 100%;
@@ -12,10 +26,13 @@ body {
   height: 48px;
   display: flex;
   align-items: center;
+  
 }
-
+@include hidenButtons('.navbar__button');
+@include hidenButtons('.navbar__closeButton');
 .navbar__elemento {
   display: inline;
+  list-style: none;
   padding: 4px;
   border-style: ridge;
   border-color: white;
@@ -25,14 +42,15 @@ body {
 
 .navbar--enlace {
   text-decoration: none;
-  @include common.newFont("ExtraLightItalic", 22);
   text-decoration-style: none;
   color: common.$nav-fontColor;
 }
+
 .navbar__lista {
   width: 100%;
   margin-left: 10px;
 }
+
 #logIn {
   float: right;
   padding: 2px;
@@ -41,44 +59,43 @@ body {
   border-width: thin;
 }
 
-.navbar__button{
-  background-color: gray;
-  border-style: none;
-  padding: 10px;
-  display: none;
-}
-.facebook-button{
-  width: 20px;
-  height: 20px;
-}
-.twitter-button{
-  width: 20px;
-  height: 20px;
-}
-.instagram-button{
-  width: 20px;
-  height: 20px;
-}
 @media (max-width: 900px) {
   .navbar {
     flex-direction: column;
     height: auto;
-    align-items: flex-start;
   }
+
   .navbar__elemento {
     display: inherit;
     margin: 0px;
+    padding: 0%;
   }
+
   #logIn {
     float: none;
   }
+
   .navbar__lista {
     margin: 0;
   }
-  .navbar__button{
+
+  .navbar__button {
     display: inline-block;
   }
-  .navbar--enlace{
+
+  .navbar--enlace {
+    display: none;
+    @include common.addFontStyle('22px', 'italy');
+    margin-bottom: 10%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar__button {
+     display: none;
+  }
+  .navbar__closeButton{
     display: none;
   }
 }

@@ -1,0 +1,51 @@
+@use 'common'as common;
+@mixin logIn__name {
+    .logIn__name {
+      @include common.addFontStyle('22px', 'bold');
+      margin-bottom: 7px;
+    }
+  }
+  
+  @mixin logIn__password {
+    .logIn__password {
+      @include common.addFontStyle('22px', 'bold');
+      margin-bottom: 7px;
+      margin-top: 7px;
+    }
+  }
+  
+  
+  @mixin logIn__element {
+    .logIn__element {
+      display: flex;
+      margin-right: 30%;
+      align-items: center;
+      margin-left: 30%;
+      padding: 10px;
+      border-style: ridge;
+      flex-direction: column;
+      width: 30%;
+    }
+  }
+
+
+  @mixin logIn {
+    .logIn {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      height: 100%;
+  
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+@mixin media {
+  @media (max-width: 600px) {
+    .logIn__element {
+      width: 100%;
+      border-style: none;
+    }
+  }
+}
+ 

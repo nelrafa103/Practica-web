@@ -1,0 +1,51 @@
+/*El archivo common.scss guarda las variables comunes y funciones utilizadas
+en los documentos de css. Haciendo mas reutilizable el codigo escrito.
+*/
+
+$nav-backgroundColor: white;
+$nav-fontColor: black;
+//Footer
+$foot-backgroundColor: black;
+$foot-fontColor: white;
+
+@mixin addFont($name) {
+    @font-face {
+        $urlFont: getUrl($name);
+        $list: getUrl($name);
+        font-family: #{$name};
+        src: url(map-get($list,$name));
+       // @debug map-get($list,$name);
+        
+    }
+}
+/*
+the function getUrl get a the name of the font and return the url to it.
+*/
+@function getUrl($name) {
+    $urlList: ("KoHo-Bold": "https://ik.imagekit.io/ereddhbkni/Font/KoHo-Bold_pz5Gpih5E.ttf",
+            "KoHo-BoldItalic":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-BoldItalic_JxRSADFdZ3.ttf",
+            "KoHo-ExtraLight":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-ExtraLight_7UJPD4xSq.ttf",
+            "KoHo-Italic":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-Italic_ABjQ5LU-8.ttf",
+            "KoHo-Light":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-Light_ecrVeUVjs.ttf",
+            "KoHo-LightItalic":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-LightItalic_aOzHqIVfC.ttf",
+            "KoHo-Medium":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-Medium_UZw3AX-s_e.ttf",
+            "KoHo-MediumItalic":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-MediumItalic_puS-Rx9Y7.ttf",
+            "KoHo-Regular":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-Regular_R9EqVAEO-X.ttf",
+            "KoHo-SemiBold":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-SemiBold_sRt8T2wv4.ttf",
+            "KoHo-SemiBoldItalic":"https://ik.imagekit.io/ereddhbkni/Font/KoHo-SemiBoldItalic_WN0-zdBUz.ttf"
+        );
+     @return $urlList;
+}
+@mixin addFontStyle($size,$style){
+ font-size: #{$size};
+ font-style: #{$style};
+}
+$card-borderColor: black;
+
+
+/*
+ Para los mixins que hacen la funcion de 
+ encasulamiento de un tipo de html elemento.
+ Por ejemplo en el uso de una carta que puede
+ que se implemente varios tipos. 
+*/

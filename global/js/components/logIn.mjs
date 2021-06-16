@@ -1,0 +1,6 @@
+function checkName(){
+ 
+}
+function checkPassWord(){
+ 
+}

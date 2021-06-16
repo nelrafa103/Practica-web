@@ -1,0 +1,413 @@
+/*El archivo common.scss guarda las variables comunes y funciones utilizadas
+en los documentos de css. Haciendo mas reutilizable el codigo escrito.
+*/
+/*
+the function getUrl get a the name of the font and return the url to it.
+*/
+/*
+ Para los mixins que hacen la funcion de 
+ encasulamiento de un tipo de html elemento.
+ Por ejemplo en el uso de una carta que puede
+ que se implemente varios tipos. 
+*/
+.introduction__animation .firstCircle {
+  width: 100px;
+  border-radius: 100%;
+  height: 100px;
+  margin-top: 50px;
+  align-self: center;
+  animation-name: first-circle;
+  animation-duration: 5s;
+  transform: translate(-10px, -10px);
+  animation-iteration-count: infinite;
+}
+@keyframes first-circle {
+  0% {
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+.introduction__animation .secondCircle {
+  width: 100px;
+  border-radius: 100%;
+  height: 100px;
+  margin-top: 50px;
+  align-self: center;
+  animation-name: second-circle;
+  animation-duration: 5s;
+  transform: translate(-50%, -50%);
+  animation-iteration-count: infinite;
+}
+@keyframes second-circle {
+  0% {
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Principal card type in the web page */
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+@font-face {
+  font-family: KoHo-Bold;
+  src: url("https://ik.imagekit.io/ereddhbkni/Font/KoHo-Bold_pz5Gpih5E.ttf");
+}
+.navbar {
+  width: 100%;
+  margin: 0%;
+  padding: 0;
+  background-color: white;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__button {
+  background-color: gray;
+  border-style: none;
+  padding: 10px;
+  display: none;
+}
+
+.navbar__closeButton {
+  background-color: gray;
+  border-style: none;
+  padding: 10px;
+  display: none;
+}
+
+.navbar__elemento {
+  display: inline;
+  list-style: none;
+  padding: 4px;
+  border-style: ridge;
+  border-color: white;
+  border-width: thin;
+  margin-right: 20px;
+}
+
+.navbar--enlace {
+  text-decoration: none;
+  text-decoration-style: none;
+  color: black;
+}
+
+.navbar__lista {
+  width: 100%;
+  margin-left: 10px;
+}
+
+#logIn {
+  float: right;
+  padding: 2px;
+  border-style: ridge;
+  border-color: whitesmoke;
+  border-width: thin;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navbar__elemento {
+    display: inherit;
+    margin: 0px;
+    padding: 0%;
+  }
+
+  #logIn {
+    float: none;
+  }
+
+  .navbar__lista {
+    margin: 0;
+  }
+
+  .navbar__button {
+    display: inline-block;
+  }
+
+  .navbar--enlace {
+    display: none;
+    font-size: 22px;
+    font-style: italy;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  .navbar__button {
+    display: none;
+  }
+
+  .navbar__closeButton {
+    display: none;
+  }
+}
+#home-image {
+  width: 100%;
+}
+
+.introduction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction__animation {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.introduction__message {
+  position: absolute;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.introduction__explain {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.introduction__text {
+  font-size: large;
+  flex-grow: 4;
+  text-align: justify;
+  margin: auto;
+  width: 500px;
+  margin-left: 15%;
+  margin-right: 15%;
+  line-height: 50px;
+  /*background-color: red; */
+}
+
+.introduction__logo {
+  /*background-color: blue; */
+  flex-grow: 4;
+  flex-shrink: 1;
+  margin: 15px;
+  width: 500px;
+}
+
+.introduction__tittle {
+  text-align: center;
+}
+
+.introduction__text > p {
+  text-align: justify;
+  font-family: "KoHo-Bold";
+}
+
+@media (max-width: 600px) {
+  .introduction__text {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.card__element {
+  height: auto;
+  padding: 20px;
+  width: auto;
+  display: flex;
+  border-style: ridge;
+  flex-direction: row;
+  margin-bottom: 10%;
+}
+.card__element .card__text {
+  animation-name: text-animation;
+  animation-duration: 2s;
+}
+@keyframes text-animation {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card__element .card__image {
+  animation-name: image-animation;
+  animation-duration: 1s;
+}
+@keyframes image-animation {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card__onLeft {
+  order: 1;
+  margin-right: 10px;
+  height: 100%;
+  width: 50%;
+}
+
+.card__onRight {
+  order: 2;
+  width: 50%;
+}
+
+.card__text {
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.card__tittle {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    margin-left: 0px;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .card__element {
+    flex-direction: column;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .card__onLeft {
+    order: 2;
+    font-size: 20;
+    font-style: italic;
+    width: 100%;
+  }
+
+  .card__onRight {
+    order: 1;
+    width: 100%;
+  }
+
+  .card__text {
+    margin-left: 0px;
+  }
+}
+.foot {
+  background-color: black;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.foot__contacts {
+  line-height: 3;
+  text-align: justify;
+  flex-grow: 2;
+  width: 33%;
+}
+
+.foot__credits {
+  text-align: justify;
+  line-height: 3;
+  flex-grow: 2;
+  width: 33%;
+}
+
+.instagram-button {
+  width: 20px;
+  height: 20px;
+}
+
+.twitter-button {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook-button {
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

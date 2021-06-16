@@ -1,0 +1,144 @@
+<DOCTYPE>
+  <html>
+    <head>
+      <link
+        href="home/nelcido/Desktop/Practica-web/global/sass/css/index.css"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <nav class="navbar">
+        <lu class="navbar__lista">
+          <li class="navbar__elemento">
+            <a alt="Enlace a acerca de nosotros" class="navbar--enlace" href=""
+              >Acerca de nosotros</a
+            >
+          </li>
+          <li class="navbar__elemento">
+            <a alt="Enlace a contactanos" class="navbar--enlace" href=""
+              >Contactanos</a
+            >
+          </li>
+          <li class="navbar__elemento">
+            <a alt="Enlace a productos" class="navbar--enlace" href=""
+              >Productos</a
+            >
+          </li>
+          <p class="navbar__elemento">
+            <a
+              alt="Enlace para iniciar sesion"
+              class="navbar--enlace"
+              href="logIn.html"
+              id="logIn"
+              >Iniciar Sesion</a
+            >
+          </p>
+          <button
+            class="navbar__button"
+            keydown="displayMenu()"
+            onclick="displayMenu()"
+          >
+            Menu
+          </button>
+          <button
+            class="navbar__closeButton"
+            keydown="closeMenu()"
+            onclick="closeMenu()"
+          >
+            Cerra
+          </button>
+        </lu>
+      </nav>
+      <section class="introduction">
+        <div class="introduction__animation">
+          <div class="firstCircle"></div>
+          <div class="secondCircle"></div>
+          <div class="thirdCircle"></div>
+        </div>
+        <div class="introduction__message"></div>
+        <section class="introduction__explain">
+          <div class="introduction__text">
+            <h2 class="introduction__tittle">lorem</h2>
+            <p>
+              Aorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquid ex ea commodi consequat. Quis aute iure reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="cards" id="exclusive"></section>
+      <footer class="foot">
+        <div class="foot__social_networks">
+          <h2>Social Network</h2>
+          <ul>
+            <li>
+              <a alt="Facebook icon" href=""></a>
+              <img
+                alt="Facebook image"
+                class="facebook-button"
+                src="https://ik.imagekit.io/ereddhbkni/Icon/facebook_P3cLKq0JD.svg"
+              />
+            </li>
+            <li>
+              <a alt="Instagram icon" href=""></a>
+              <img
+                alt="Instagram images"
+                class="instagram-button"
+                src="https://ik.imagekit.io/ereddhbkni/Icon/instagram_cashN9yQa.svg"
+              />
+            </li>
+            <li>
+              <a alt="Twitter icon" href=""></a>
+              <img
+                alt="Twitter icon"
+                class="twitter-button"
+                src="https://ik.imagekit.io/ereddhbkni/Icon/gorjeo_qP0-xgeLX.svg"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="foot__credits">
+          <h2>Credists</h2>
+          <p>Created by Nelcido Diaz (nelrafa103)</p>
+        </div>
+        <div class="foot__contacts">
+          <h2>Contacts</h2>
+          <ul>
+            <li>Contact 1</li>
+            <li>Contact 2</li>
+            <li>Contact 3</li>
+          </ul>
+          <script
+            crossorigin="anonymous"
+            integrity="sha384-cdrFIqe3RasCMNE0jeFG9xJHog/tgOVC1E9Lzve8LQN1g5WUHo0Kvk1mawWjxX7a"
+            src="https://cdn.socket.io/4.1.1/socket.io.min.js"
+          ></script>
+         <!-- <script src="/home/nelcido/Desktop/Practica-web/global/js/components/client-side.mjs" type="module"></script>-->
+          <script
+            src="/home/nelcido/Desktop/Practica-web/global/js/index.mjs"
+            type="module"
+          ></script>
+        <!-- <script src="/home/nelcido/Desktop/Practica-web/global/js/components/client-side.mjs" type="module"></script>--> 
+          <script type="module">
+            import { addCard } from "/home/nelcido/Desktop/Practica-web/global/js/components/card.mjs";
+           
+            const socket = io("http://localhost:4000/dat");
+            socket.on("cards", (data, component) => {
+              addCard(component);
+              addCard(component);
+            });
+            socket.on("logIn", (dat) => {
+              console.log(dat);
+            });
+            socket.emit("event", "completed");
+          </script>
+        </div>
+      </footer>
+    </body>
+  </html>
+</DOCTYPE>

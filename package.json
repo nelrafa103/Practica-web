@@ -1,7 +1,7 @@
 {
   "name": "practica-web",
   "version": "1.0.0",
-  "description": "Un proyecto para poner a prueba parte de mis habilidades",
+  "description": "Un proyecto para crear una aplicacion web. Y practicar tecnologias",
   "main": "index.js",
   "scripts": {
     "test": "run"
@@ -11,29 +11,16 @@
     "url": "git+https://github.com/nelrafa103/Practica-web.git"
   },
   "keywords": [
-    "practica",
+    "Aplication",
     "web"
   ],
-  "author": "nelcido rafael diaz delgado",
+  "author": "nelrafa103",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nelrafa103/Practica-web/issues"
   },
   "homepage": "https://github.com/nelrafa103/Practica-web#readme",
-  "devDependencies": {
-    "eslint": "^7.26.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1"
-  },
   "dependencies": {
-    "animejs": "^3.2.1",
-    "browserify": "^17.0.0",
-    "cheerio": "^1.0.0-rc.9",
-    "jsdom": "^16.6.0",
-    "node-html-parser": "^3.3.4",
-    "socket.io": "^4.1.2",
-    "socket.io-client": "^4.1.2"
+    "dotenv": "^10.0.0"
   }
 }

@@ -1,7 +1,19 @@
 @function changePosition(){
 
 }
-
+@mixin addAnimationVanished($className,$animationName,$duration){
+  #{$className}{
+     animation-name: #{$animationName};
+     animation-duration: #{$duration};
+  }
+  @keyframes #{$animationName}{
+    0% {opacity: 0.1;};
+    25% {opacity: 0.3;};
+    50% {opacity: 0.6;};
+    75% {opacity: 9;};
+    100% {opacity: 1;};
+  }
+}
 @mixin addAnimation($position,$animationName,$className,$movement){
      #{$className}{
         width: 100px;
@@ -11,7 +23,7 @@
         align-self: #{$position};
         animation-name: #{$animationName};
         animation-duration: 5s;
-        transform: translate(#{$movement},#{$movement});
+        transform: translate(-#{$movement},-#{$movement});
         animation-iteration-count: infinite;
     }
     
@@ -26,5 +38,7 @@
 
 .introduction__animation {
     @include addAnimation('center','first-circle','.firstCircle','10px');
-    @include addAnimation('center','second-circle','.secondCircle','10px');
+    @include addAnimation('center','second-circle','.secondCircle','50%');
 }
+
+
